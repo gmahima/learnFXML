@@ -8,13 +8,12 @@ import javafx.scene.control.Label;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller {
-    public Button button;
-    public Label l;
+public class Controller implements Initializable {
 
-    public void handleButtonClick() {
-        System.out.println(l.getText() + " too!!!!");
-        button.setText("got it");
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        System.out.println("loading");
+
     }
 }
 
